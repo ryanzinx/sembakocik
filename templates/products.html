@@ -1,0 +1,134 @@
+<!-- templates/products.html -->
+{% extends "base.html" %}
+
+{% block title %}
+Produk
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h2 class="text-center mb-5"><i class="fas fa-boxes me-1"></i> Produk Kami</h2>
+    <div class="row">
+        <!-- Kategori Beras -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='img/beras.png') }}" class="card-img-top" alt="Beras" style="width: 250px; height: auto;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Beras Premium</h5>
+                    <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>✓ Beras Setra Ramos</li>
+                            <li>✓ Beras Pandan Wangi</li>
+                            <li>✓ Beras IR64</li>
+                        </ul>
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Tanya Stock</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kategori Minyak -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='img/minyak.png') }}" class="card-img-top" alt="Minyak Goreng" style="width: 250px; height: auto;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Minyak Goreng</h5>
+                    <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>✓ Minyakita</li>
+                            <li>✓ Tropical</li>
+                            <li>✓ Sunco</li>
+                        </ul>
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Tanya Stock</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kategori Gula -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='img/gula.png') }}" class="card-img-top" alt="Gula" style="width: 250px; height: auto;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Gula & Pemanis</h5>
+                    <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>✓ Gula Pasir</li>
+                            <li>✓ Gula Merah</li>
+                            <li>✓ Gula Aren</li>
+                        </ul>
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Tanya Stock</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kategori Tepung -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='img/tepung.png') }}" class="card-img-top" alt="Tepung" style="width: 250px; height: auto;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Tepung</h5>
+                    <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>✓ Tepung Terigu</li>
+                            <li>✓ Tepung Tapioka</li>
+                            <li>✓ Tepung Beras</li>
+                        </ul>
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Tanya Stock</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kategori Telur -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='img/telur.png') }}" class="card-img-top" alt="Telur" style="width: 250px; height: auto;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Telur</h5>
+                    <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>✓ Telur Ayam</li>
+                            <li>✓ Telur Bebek</li>
+                            <li>✓ Telur Puyuh</li>
+                        </ul>
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Tanya Stock</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kategori Bumbu -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="d-flex justify-content-center">
+                    <img src="{{ url_for('static', filename='img/bumbu.png') }}" class="card-img-top" alt="Bumbu Dapur" style="width: 250px; height: auto;">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Bumbu Dapur</h5>
+                    <p class="card-text">
+                        <ul class="list-unstyled">
+                            <li>✓ Garam</li>
+                            <li>✓ Merica</li>
+                            <li>✓ Bumbu Masak</li>
+                        </ul>
+                    </p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Tanya Stock</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

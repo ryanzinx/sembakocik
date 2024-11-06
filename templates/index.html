@@ -1,0 +1,60 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}
+Beranda
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Selamat Datang di Sembakocik</h2>
+                <p class="lead">Menyediakan berbagai kebutuhan sembako berkualitas dengan harga grosir terjangkau.</p>
+                <a href="{{ url_for('products') }}" class="btn btn-primary btn-md">Lihat Produk</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Sembakocik" class="img-fluid" style="width: 250px; height: auto;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container py-5">
+    <h3 class="text-center mb-4">Mengapa Memilih Kami?</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-tags fa-3x mb-3"></i>
+                    <h5>Harga Grosir</h5>
+                    <p>Dapatkan harga spesial untuk pembelian dalam jumlah besar</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-check-circle fa-3x mb-3"></i>
+                    <h5>Produk Berkualitas</h5>
+                    <p>Semua produk kami dijamin berkualitas dan bergaransi</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <i class="fas fa-shipping-fast fa-3x mb-3"></i>
+                    <h5>Pengiriman Cepat</h5>
+                    <p>Layanan pengiriman cepat ke seluruh wilayah</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

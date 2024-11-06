@@ -1,0 +1,64 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+
+{% block title %}
+Tentang Kami
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h2 class="mb-4"><i class="fas fa-info-circle me-1"></i> Tentang Sembakocik</h2>
+            <p class="lead">Melayani kebutuhan sembako anda sejak 2010</p>
+            <p>Sembakocik adalah toko grosir sembako terpercaya yang telah melayani masyarakat selama lebih dari 13 tahun. Kami berkomitmen untuk menyediakan produk berkualitas dengan harga yang terjangkau.</p>
+            <p>Dengan pengalaman yang kami miliki, kami memahami kebutuhan pelanggan dan selalu berusaha memberikan pelayanan terbaik.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Toko Kami" class="img-fluid" style="width: 250px; height: auto;">
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3 class="text-center mb-4">Nilai-Nilai Kami</h3>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-award fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Kualitas</h5>
+                    <p class="card-text">Produk berkualitas terbaik untuk kepuasan pelanggan</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Kejujuran</h5>
+                    <p class="card-text">Transparansi dalam setiap transaksi bisnis</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-heart fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Pelayanan</h5>
+                    <p class="card-text">Mengutamakan kepuasan pelanggan dalam setiap layanan</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center h-100">
+                <div class="card-body">
+                    <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Inovasi</h5>
+                    <p class="card-text">Terus berkembang mengikuti kebutuhan pasar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
